@@ -4,7 +4,6 @@ using Infrastructure.Persistence.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -12,11 +11,9 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Infrastructure.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20251223173147_Initial")]
-    partial class Initial
+    partial class AppDbContextModelSnapshot : ModelSnapshot
     {
-        /// <inheritdoc />
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -119,7 +116,7 @@ namespace Infrastructure.Migrations
                         {
                             Id = 1,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "3c44eb86-3d41-4229-9696-6caa57fb504e",
+                            ConcurrencyStamp = "c18ec524-0aeb-4bd9-8c3c-c7c9cc1506f3",
                             Email = "mehrdara1@gmail.com",
                             EmailConfirmed = true,
                             FirstName = "Mehr",
@@ -128,9 +125,9 @@ namespace Infrastructure.Migrations
                             NormalizedEmail = "MEHRDARA1@GMAIL.COM",
                             NormalizedUserName = "MEHRDARA1",
                             OrganizationMail = "mehrdara1@gmail.com",
-                            PasswordHash = "AQAAAAIAAYagAAAAEIXjHQxfUO9jTjQa5LMDIPFYRnb0DAsiH2uaQdZFb8MBIG00z3t7Hm2X0mxjcClB1g==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEG/MT7Ol4Ep0B4KtE1YUoX98nZZ10UatuyX54DTDNih603h/qRmXBZcQIZqh67YsDw==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "6b89e8eb-e0da-4c58-82c5-b88b65cbcde6",
+                            SecurityStamp = "dba3efa3-f1be-404e-95f6-2b5441f1691a",
                             TwoFactorEnabled = false,
                             UserName = "mehrdara1"
                         },
@@ -138,7 +135,7 @@ namespace Infrastructure.Migrations
                         {
                             Id = 2,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "7282908d-eb50-426f-b86f-483a95a2dcb4",
+                            ConcurrencyStamp = "cea1cace-bc23-428b-a1ae-4b2b951d9053",
                             Email = "mehrdara2@gmail.com",
                             EmailConfirmed = true,
                             FirstName = "Mehr",
@@ -147,9 +144,9 @@ namespace Infrastructure.Migrations
                             NormalizedEmail = "MEHRDARA2@GMAIL.COM",
                             NormalizedUserName = "MEHRDARA2",
                             OrganizationMail = "mehrdara2@gmail.com",
-                            PasswordHash = "AQAAAAIAAYagAAAAEKwZbQ41oxC48yb0us5WDAjgx7gjh5FiblK3ASYf+Xhh6CZ5Dfc2pH5rKgiykzAWrw==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEMw+Sf3g20xAFEyjp/QWjw1CT/Waejc1khTfDwppTC600TPUc64Qhfor28Gmxt56sA==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "c1250ea2-9bdf-4102-883e-b6eaf2e2f161",
+                            SecurityStamp = "6eee75d4-704b-4c78-b444-950a430c3686",
                             TwoFactorEnabled = false,
                             UserName = "mehrdara2"
                         },
@@ -157,7 +154,7 @@ namespace Infrastructure.Migrations
                         {
                             Id = 3,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "f0a3a91b-b607-42e3-aadf-1fb4c2adac63",
+                            ConcurrencyStamp = "deace663-2957-4629-a78f-f036980c3883",
                             Email = "mehrdara3@gmail.com",
                             EmailConfirmed = true,
                             FirstName = "Mehr",
@@ -166,9 +163,9 @@ namespace Infrastructure.Migrations
                             NormalizedEmail = "MEHRDARA3@GMAIL.COM",
                             NormalizedUserName = "MEHRDARA3",
                             OrganizationMail = "mehrdara3@gmail.com",
-                            PasswordHash = "AQAAAAIAAYagAAAAEPYaX5pdGR7+Q4CR1jv6vuQAV/sR2GWCiKbaVMlidAwE6cemSFoAMTdCXhWDS8b72Q==",
+                            PasswordHash = "AQAAAAIAAYagAAAAECPut6KDt1uu7DgZAQjddJBEj28MCkF1tgRcMAG20c+24RJihnjHNsz73sMQPAji2g==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "bb47fb7b-8ec0-42e8-99fc-17349c267954",
+                            SecurityStamp = "196dde20-feba-47cf-8b7e-adba07af6c8f",
                             TwoFactorEnabled = false,
                             UserName = "mehrdara3"
                         },
@@ -176,7 +173,7 @@ namespace Infrastructure.Migrations
                         {
                             Id = 4,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "4687a540-db49-45d0-985f-83f34afedfda",
+                            ConcurrencyStamp = "e164c672-7ff8-45fe-98f4-93d02f5713b2",
                             Email = "mehrdara4@gmail.com",
                             EmailConfirmed = true,
                             FirstName = "Mehr",
@@ -185,9 +182,9 @@ namespace Infrastructure.Migrations
                             NormalizedEmail = "MEHRDARA4@GMAIL.COM",
                             NormalizedUserName = "MEHRDARA4",
                             OrganizationMail = "mehrdara4@gmail.com",
-                            PasswordHash = "AQAAAAIAAYagAAAAEEFZnh9AvjCN0kClnoVD4Hmk8YdRRFikfNHLrIIE1R/3TLseGI/USO5aN902/P2FMg==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEMPeQ05svicEzvg5a5TbpWuTXrHgzJ1kYnHZHyOQoLF3hxqVB4PBmrje0KZEbdTAYg==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "74075db2-fd62-4908-85b8-c90d1d5032df",
+                            SecurityStamp = "c2f4e9c1-47da-4fae-b54f-9938f2872949",
                             TwoFactorEnabled = false,
                             UserName = "mehrdara4"
                         },
@@ -195,7 +192,7 @@ namespace Infrastructure.Migrations
                         {
                             Id = 5,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "d75a1866-f636-4409-a83f-f33121db0c6c",
+                            ConcurrencyStamp = "eba1690e-13f6-40ba-83b0-69f02c3e9602",
                             Email = "mehrdara5@gmail.com",
                             EmailConfirmed = true,
                             FirstName = "Mehr",
@@ -204,9 +201,9 @@ namespace Infrastructure.Migrations
                             NormalizedEmail = "MEHRDARA5@GMAIL.COM",
                             NormalizedUserName = "MEHRDARA5",
                             OrganizationMail = "mehrdara5@gmail.com",
-                            PasswordHash = "AQAAAAIAAYagAAAAEOuutCneRmRdFkNHQxwn/jejqbwvHe/sZW7LrnKuPlEhI+tMPPbV8Xaq5wp87aBKjA==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEAlKFJOOeygYCNMCfGwvlPrPSWElZFghpeB11b0D+1x/cqXwJe2R0hTJKbuLR9Ztvg==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "8a0566c4-cf4e-4c2a-bdfd-b8cb7b41c87b",
+                            SecurityStamp = "7000498c-d458-49fe-9b7a-d2d38da501ef",
                             TwoFactorEnabled = false,
                             UserName = "mehrdara5"
                         },
@@ -214,7 +211,7 @@ namespace Infrastructure.Migrations
                         {
                             Id = 6,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "fd855e00-ef0a-4dac-a03b-2fee653324a1",
+                            ConcurrencyStamp = "413b155d-4f86-430e-b58d-cafb23877674",
                             Email = "mehrdara6@gmail.com",
                             EmailConfirmed = true,
                             FirstName = "Mehr",
@@ -223,9 +220,9 @@ namespace Infrastructure.Migrations
                             NormalizedEmail = "MEHRDARA6@GMAIL.COM",
                             NormalizedUserName = "MEHRDARA6",
                             OrganizationMail = "mehrdara6@gmail.com",
-                            PasswordHash = "AQAAAAIAAYagAAAAEHAIoIE14iDluZpY1i7ev4pZbeclTSq+03m1Z6d6L+QHy6Url/+2Li8LLY0s/6h2dg==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEIgTAL8KEWCMfs2p1gJ6C6owq2w7VpnEKubFnVtmk1INmK0u9aEb6t2jiRucB0EjKQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "7e23a298-31a1-4d43-93d0-2d777993fbfc",
+                            SecurityStamp = "d32c8b67-95c5-4623-a5b8-9f2ddc3dea77",
                             TwoFactorEnabled = false,
                             UserName = "mehrdara6"
                         },
@@ -233,7 +230,7 @@ namespace Infrastructure.Migrations
                         {
                             Id = 7,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "e60dcda6-19cf-4031-bca8-660a1a1918bd",
+                            ConcurrencyStamp = "a1f6f989-ce4d-4489-af9c-08d2731eb30f",
                             Email = "mehrdara7@gmail.com",
                             EmailConfirmed = true,
                             FirstName = "Mehr",
@@ -242,9 +239,9 @@ namespace Infrastructure.Migrations
                             NormalizedEmail = "MEHRDARA7@GMAIL.COM",
                             NormalizedUserName = "MEHRDARA7",
                             OrganizationMail = "mehrdara7@gmail.com",
-                            PasswordHash = "AQAAAAIAAYagAAAAEJuVQHb5nn63kFfcYUMs7wB8yTBEjMpAPktHZwhTkV4Pnlf0hKwImEHq7pzC2oGq7w==",
+                            PasswordHash = "AQAAAAIAAYagAAAAELqSV4mumBlPbNMlgTdTJSfyEPlx17sPeS0Tza8n4As2lvGZ/BiLmXA0ZEd1GLrhYQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "4c74704f-f9b0-4de5-aa06-03076b60e6dd",
+                            SecurityStamp = "ea04585b-16d9-4023-84bb-3b7042db104c",
                             TwoFactorEnabled = false,
                             UserName = "mehrdara7"
                         },
@@ -252,7 +249,7 @@ namespace Infrastructure.Migrations
                         {
                             Id = 8,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "49ec161e-4c9d-48fe-bdf0-3a3d8cf96928",
+                            ConcurrencyStamp = "2f74c066-b934-4b57-a919-fc86c1eee8e8",
                             Email = "mehrdara8@gmail.com",
                             EmailConfirmed = true,
                             FirstName = "Mehr",
@@ -261,9 +258,9 @@ namespace Infrastructure.Migrations
                             NormalizedEmail = "MEHRDARA8@GMAIL.COM",
                             NormalizedUserName = "MEHRDARA8",
                             OrganizationMail = "mehrdara8@gmail.com",
-                            PasswordHash = "AQAAAAIAAYagAAAAEC1kdYcv0o/tG4Ok1fpG8Cy6dtnc9KPwjNq6sOurnep6OBDbGi8kVBU+61yD1NdmgQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEG7LVLY0ZycuoRAaygeXUGa3EbIXEK4vhRdRQPPaWtNAmkJZG23swWif9oCR0Z04xQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "9dd64414-d786-4d48-87be-8bb3a7b8c57c",
+                            SecurityStamp = "194a73a2-6ae9-416a-b7b8-6802cc199e54",
                             TwoFactorEnabled = false,
                             UserName = "mehrdara8"
                         },
@@ -271,7 +268,7 @@ namespace Infrastructure.Migrations
                         {
                             Id = 9,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "0a2920e9-547e-477e-8478-c329047c950c",
+                            ConcurrencyStamp = "3704569b-f5b8-462f-bf7e-91f07992621c",
                             Email = "mehrdara9@gmail.com",
                             EmailConfirmed = true,
                             FirstName = "Mehr",
@@ -280,9 +277,9 @@ namespace Infrastructure.Migrations
                             NormalizedEmail = "MEHRDARA9@GMAIL.COM",
                             NormalizedUserName = "MEHRDARA9",
                             OrganizationMail = "mehrdara9@gmail.com",
-                            PasswordHash = "AQAAAAIAAYagAAAAEEXyr0lsKfoW3INlBuCarDIWW2c1DDxKhkRlnsptSkZ18eQjtVFZAnRIwmgVBkYXFA==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEEToSG7InvPeAB7WZN4l0G7iQPVWhupq/Z+V3T7ftTbITFFp+oV4brnvCRNRJlT4Bg==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "bca3901a-5cb6-44df-ada3-540d3fb5b6e5",
+                            SecurityStamp = "e911c85c-8d75-41cd-91dd-d5dc14811075",
                             TwoFactorEnabled = false,
                             UserName = "mehrdara9"
                         },
@@ -290,7 +287,7 @@ namespace Infrastructure.Migrations
                         {
                             Id = 10,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "2b705fe8-4881-4c67-86f2-83865cd5d2cc",
+                            ConcurrencyStamp = "942b31c8-8562-4d5e-a037-a2e50ab86a9c",
                             Email = "mehrdara10@gmail.com",
                             EmailConfirmed = true,
                             FirstName = "Mehr",
@@ -299,9 +296,9 @@ namespace Infrastructure.Migrations
                             NormalizedEmail = "MEHRDARA10@GMAIL.COM",
                             NormalizedUserName = "MEHRDARA10",
                             OrganizationMail = "mehrdara10@gmail.com",
-                            PasswordHash = "AQAAAAIAAYagAAAAEOijlVTmWe/90gokssArWMZ1qPuYEvlJJxxIlL27z6jdA+tJjzPnYRS8LBINEXR3pQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEOua3ryNw+3/owv9JBlOx/5ZB2apMtz0UFNE0RccjeixthazVsAcF3g/PWI6sbeN8g==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "90788236-7ad9-40f2-aeda-a9446fad8ded",
+                            SecurityStamp = "d6192833-4ace-4dfc-b799-59bffd04bec7",
                             TwoFactorEnabled = false,
                             UserName = "mehrdara10"
                         });
